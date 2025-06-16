@@ -4,6 +4,13 @@ function greet(name){
 }
 
 console.log(greet("Milana"));
+
+function greet2(name2 ="Humber"){
+    return "Hello, " + name2 + "!";
+}
+
+console.log(greet2());
+console.log(greet2("Milana"));
 console.log("NAME FUNCTION ENDS: ");
 
 
@@ -65,6 +72,26 @@ counter();
 counter();
 counter();
 
+
+function evenCounter(){
+    let count1 =0;
+    return function(){
+        count1 +=2;
+        console.log("evenCounter: ", count1);
+    };
+}
+
+const evenCount = evenCounter();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
+evenCount();
 console.log("Global and Local ends:");
 
 
